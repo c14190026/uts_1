@@ -62,6 +62,43 @@ void main(List<String> arguments) {
     }
 
     print('n');
+
+    for (int i = 0; i < x / 2 - 1; i++) //setengah bawah
+    {
+      for (int j = 0; j < x / 2; j++) //kiri bawah
+      {
+        if (j - i == 1)
+          stdout.write('+');
+        else if (j - i < 1)
+          stdout.write(' ');
+        else {
+          stdout.write(kata[c]);
+          c++;
+          if (c >= kata.length) //reset counter
+            c = 0;
+        }
+
+        stdout.write(' ');
+      }
+
+      for (int j = 0; j < x / 2 - 1; j++) //kanan bawah
+      {
+        if (i + j == x / 2 - 2.5)
+          stdout.write('+');
+        else if (i + j > x / 2 - 2.5)
+          stdout.write(' ');
+        else {
+          stdout.write(kata[c]);
+          c++;
+          if (c >= kata.length) //reset counter
+            c = 0;
+        }
+
+        stdout.write(' ');
+      }
+
+      print('n');
+    }
   } else {
     stdout.write(kata + '\n');
   }
