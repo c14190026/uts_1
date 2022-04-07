@@ -44,7 +44,7 @@ void main(List<String> arguments) {
         stdout.write(' ');
       }
 
-      print('n');
+      print('');
     }
 
     for (int j = 0; j < x; j++) //baris tangah
@@ -61,7 +61,7 @@ void main(List<String> arguments) {
       stdout.write(' ');
     }
 
-    print('n');
+    print('');
 
     for (int i = 0; i < x / 2 - 1; i++) //setengah bawah
     {
@@ -97,7 +97,7 @@ void main(List<String> arguments) {
         stdout.write(' ');
       }
 
-      print('n');
+      print('');
     }
   } else {
     stdout.write(kata + '\n');
